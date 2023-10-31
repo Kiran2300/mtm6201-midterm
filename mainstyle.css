@@ -1,0 +1,67 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.w3_navigation {
+    background-color: red;
+    color: #fff;
+    padding: 10px 0;
+}
+ /*animation to the heading */
+h2 {
+  color: red; 
+  animation: colorChange 2s infinite;
+}
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+/* Apply the marquee animation to the <h4> element */
+h4 {
+  white-space: nowrap;
+  overflow: hidden;
+  animation: marquee 20s linear infinite;
+}
+
+@keyframes colorChange {
+  0% {
+    color: red;
+  }
+  25% {
+    color: blue;
+  }
+  50% {
+    color: green;
+  }
+  75% {
+    color: orange;
+  }
+}
+
+/* Apply the flickering animation to the button element */
+@keyframes flicker {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+.button-flicker {
+  animation: flicker 2s infinite;
+}
+
